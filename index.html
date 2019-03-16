@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Unit-4 Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+      <style>
+      body {
+          background-image: url("./assets/images/background.jpg");
+        }
+      </style>
+        <canvas id="c"></canvas>
+        <header>
+            <nav class="navbar navbar-expand-md fixed-top special-bg special-bb">
+                <a class="navbar-brand special-font" href="#">Infinity Stone Collector</a>
+                <button id="hideDirections">Directions</button>
+            </nav>
+        </header>
+
+        <main role="main" class="container">
+
+            <div id="hidden">
+                <h1 class="center">Directions</h1>
+                <p>Thanos is either a huge dick and wants to kill off half the population of the universe, or he's the only person MAD enough to do what needs to be done. Follow the below instructions below to prevent his snap, or ignore them and wildly click if you're also a dick....</p>
+                <br>
+                <p>You will be given a random number at the start of the game.</p>
+                <p>There are six Infinity Stones below. By clicking on a Stone you will add a specific amount of points to your total score.</p>
+                <p>You can only stop Thano from snapping his fingers by matching your total score to the random number, and if you can't Thanos snaps and half of all life in the ENTIRE UNIVERSE WILL CEASE TO EXIST... no pressure tho have fun</p>
+                <p>Each time when the game starts, the game will change the values of each crystal. Because fuck stability</p>
+                <button id="exit">Exit</button>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <h2 class="target">Target Number</h2>
+                        </div>
+                        <div class="row">
+                            <div id="random-number"></div>
+                        </div>
+                    </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3"></div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <h2 class="score">Your Score</h2>
+                        </div>
+
+                        <div class="row">
+                            <div id="player-number"></div>
+                        </div>
+                    </div>
+                <div class="col-md-3"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div id="crystals" class="mt-50"></div>
+                </div>
+            </div>
+
+            <div class="row mt-50">
+                <div class="col-md-6">
+                    <h2>Snap Prevented:<span id="wins"></span></h2>
+                </div>
+
+                <div class="col-md-6">
+                    <h2>Times Snapped:<span id="losses"></span></h2>
+                </div>
+            </div>
+        </main>
+    </body>
+        <footer class="footer special-bg special-bt"></footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="assets/javascript/game.js"></script>
+</html>
