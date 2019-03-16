@@ -36,12 +36,12 @@ function reNum() {
     }
 }
 
-var imageOption1 = "assets/images/crystal1.png";
-var imageOption2 = "assets/images/crystal2.png";
-var imageOption3 = "assets/images/crystal3.png";
-var imageOption4 = "assets/images/crystal4.png";
-var imageOption5 = "assets/images/crystal5.png";
-var imageOption6 = "assets/images/crystal6.png";
+var imageOption1 = "assets/images/crystal1.jpg";
+var imageOption2 = "assets/images/crystal2.jpg";
+var imageOption3 = "assets/images/crystal3.jpg";
+var imageOption4 = "assets/images/crystal4.jpg";
+var imageOption5 = "assets/images/crystal5.jpg";
+var imageOption6 = "assets/images/crystal6.jpg";
 
 var imageOptions = [imageOption1, imageOption2, imageOption3, imageOption4, imageOption5, imageOption6];
 
